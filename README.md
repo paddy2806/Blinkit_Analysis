@@ -18,8 +18,8 @@ This project simulates a real-world sales data scenario from **Blinkit – India
 - 🔹 PDF outputs for quick preview
 
 📄 **Preview Now:**  
-- [📊 Power BI Dashboard (PDF)](./BLINKIT%20POWERBI%20DASHBOARD.pdf)  
-- [📈 Excel Dashboard (PDF)](./BLINKIT%20DASHBOARD%20EXCEL.pdf)
+- [📊 Power BI Dashboard (PDF)](./BLINKIT%20POWERBI%20DASHBOARD%20.pdf)  
+- [📈 Excel Dashboard (PDF)](./BLINKIT%20DASHBOARD%20EXCEL%20.pdf)
 
 ---
 
@@ -72,3 +72,4 @@ This project simulates a real-world sales data scenario from **Blinkit – India
 > This project showcases my ability to convert raw transactional data into executive-level insights using both **Excel and Power BI**. It reflects a balance of **technical proficiency**, **analytical thinking**, and **business understanding**, all wrapped into an intuitive dashboarding experience.
 
 ---
+
