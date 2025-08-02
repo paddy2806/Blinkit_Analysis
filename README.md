@@ -40,8 +40,6 @@ This project simulates a real-world retail analytics scenario for **Blinkit**, a
 |---------------------|----------------------------------------------|
 | 📊 Power BI          | Interactive dashboarding and drilldown KPIs |
 | 📈 Microsoft Excel   | Static dashboards, pivot analysis            |
-| 🧮 Excel Formulas    | KPI computation and visual formatting        |
-| 🧰 DAX               | Measures and calculated columns in Power BI  |
 
 ---
 
