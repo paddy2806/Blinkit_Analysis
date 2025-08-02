@@ -116,5 +116,3 @@ This project simulates a real-world retail analytics scenario for **Blinkit**, a
 It combines the strengths of **BI tools**, **analytical thinking**, and **data storytelling** — all critical skills in today’s data-driven roles.
 
 ---
-
-⭐ *If this project impressed you, feel free to star it!*
