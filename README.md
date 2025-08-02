@@ -10,31 +10,27 @@
 
 ## 💼 About the Project
 
-This project simulates a real-world retail analytics scenario for **Blinkit**, a leading instant delivery platform in India. The aim was to analyze historical sales data and identify trends across:
+This project simulates a real-world retail analytics scenario for **Blinkit**, a leading instant delivery platform in India. The goal was to analyze historical sales data and identify trends across:
 
-- 📦 Product categories
-- 🏬 Outlet performance (type, size, tier)
-- 🧈 Fat content preferences
-- ⭐ Customer feedback
-- 🧭 Geographic segmentation
+- 📦 Product categories  
+- 🏬 Outlet performance (type, size, tier)  
+- 🧈 Fat content preferences  
+- ⭐ Customer feedback  
+- 🧭 Geographic segmentation  
 
 📁 **Deliverables:**  
 - 🔹 Dynamic **Power BI Dashboard**  
-- 🔹 Static **Excel Dashboard** 
-
-📄 **Preview Now:**  
-- [📊 Power BI Dashboard (PDF)](./BLINKIT%20POWERBI%20DASHBOARD%20.pdf)  
-- [📈 Excel Dashboard (PDF)](./BLINKIT%20DASHBOARD%20EXCEL%20.pdf)
+- 🔹 Static **Excel Dashboard**  
 
 ---
 
 ## 🧠 Analytical Approach
 
-- 📚 **Data Understanding:** Reviewed column-level data and identified key variables (Sales, Ratings, Item Types, Tiers, etc.)
-- 🧹 **Data Cleaning:** Removed nulls, handled data types, created categories, and unified naming conventions
-- 🧮 **KPI Computation:** Used formulas (Excel) and DAX (Power BI) to derive key metrics like Avg. Sales, Rating, Item Count, etc.
-- 📊 **Visualization Strategy:** Designed clean, business-ready dashboards with filter panels, trend charts, and category comparisons
-- 🎯 **Insight Extraction:** Identified patterns that impact revenue, category performance, and customer satisfaction
+- 📚 **Data Understanding:** Reviewed column-level data and identified key variables (Sales, Ratings, Item Types, Tiers, etc.)  
+- 🧹 **Data Cleaning:** Removed nulls, handled data types, created categories, and unified naming conventions  
+- 🧮 **KPI Computation:** Used Excel formulas and DAX in Power BI to derive key metrics like average sales, ratings, and item count  
+- 📊 **Visualization Strategy:** Created clean, business-ready dashboards with filter panels, trend charts, and category comparisons  
+- 🎯 **Insight Extraction:** Identified patterns that impact revenue, category performance, and customer satisfaction  
 
 ---
 
@@ -76,27 +72,28 @@ This project simulates a real-world retail analytics scenario for **Blinkit**, a
 
 ## 🔍 Key Insights
 
-- 🏪 **Supermarket Type 1** drives the highest revenue (~$788K) — most impactful outlet type.
-- 🧈 **Low Fat items** outperform Regular by a large margin — signals a shift in consumer preferences.
-- 🏙️ **Tier 3 outlets** surprisingly outperform others — market potential in smaller cities.
-- 🏗️ **Medium-sized outlets** are the sweet spot in performance — optimized for sales and experience.
-- 🍏 **Top Item Types:** Fruits & Veggies, Snack Foods, Household, and Dairy account for most of the revenue.
-- ⭐ **Consistent Ratings (~3.9+)** across all outlet types — customer satisfaction is stable.
+- 🏪 **Supermarket Type 1** drives the highest revenue (~$788K) — most impactful outlet type  
+- 🧈 **Low Fat items** outperform Regular by a large margin — signals a shift in consumer preferences  
+- 🏙️ **Tier 3 outlets** surprisingly outperform others — market potential in smaller cities  
+- 🏗️ **Medium-sized outlets** are the sweet spot in performance — optimized for sales and experience  
+- 🍏 **Top Item Types:** Fruits & Veggies, Snack Foods, Household, and Dairy account for most of the revenue  
+- ⭐ **Consistent Ratings (~3.9+)** across all outlet types — customer satisfaction is stable  
 
 ---
 
-## 📌 Dashboard Highlights
+## 📌 Dashboard Snapshots
 
-### 📊 Power BI
-- Interactive filters: Item Type, Outlet Size, Tier, Fat Content
-- KPI cards for instant insight
-- Segmentation charts by geography, outlet, and product category
-- Clean, executive-friendly layout
+### 📊 Power BI Dashboard  
+Interactive filters, advanced segmentation, dynamic KPIs, and category breakdowns.
 
-### 📈 Excel
-- Pivot charts with slicers for self-service exploration
-- Compact layout ideal for printing or PDF reporting
-- Categorical deep dives across outlet and item types
+![Power BI Dashboard](./Blinkit_PowerBI.png)
+
+---
+
+### 📈 Excel Dashboard  
+Well-structured pivot visuals, summary KPIs, category slicers for business insights at a glance.
+
+![Excel Dashboard](./Blinkit_excel.png)
 
 ---
 
@@ -106,7 +103,7 @@ This project simulates a real-world retail analytics scenario for **Blinkit**, a
 - 🔹 Category performance tracking for seasonal planning  
 - 🔹 Product assortment strategy (Low Fat vs Regular)  
 - 🔹 Outlet performance benchmarking across sizes and tiers  
-- 🔹 Executive reporting for CXOs and product managers
+- 🔹 Executive reporting for CXOs and product managers  
 
 ---
 
