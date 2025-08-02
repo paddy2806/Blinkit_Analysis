@@ -20,8 +20,7 @@ This project simulates a real-world retail analytics scenario for **Blinkit**, a
 
 📁 **Deliverables:**  
 - 🔹 Dynamic **Power BI Dashboard**  
-- 🔹 Static **Excel Dashboard**  
-- 🔹 Filterable PDF outputs for portfolio-ready preview
+- 🔹 Static **Excel Dashboard** 
 
 📄 **Preview Now:**  
 - [📊 Power BI Dashboard (PDF)](./BLINKIT%20POWERBI%20DASHBOARD%20.pdf)  
