@@ -1,16 +1,17 @@
 # 🛒 Blinkit Sales Analytics Dashboard  
-### 📊 Power BI & Excel Project | Business Intelligence | Retail Analytics
+### 📊 Power BI, Excel & SQL Project | Business Intelligence | Retail Analytics
 
 ---
 
-> **A retail business intelligence project transforming Blinkit sales data into actionable insights using Power BI and Excel.**  
+> **A retail business intelligence project transforming Blinkit sales data into actionable insights using Power BI, Excel, and SQL.**  
 > Designed to support data-driven decision-making across sales, product strategy, and outlet performance.
 
 ---
 
 ## 💼 About the Project
 
-This project simulates a real-world retail analytics scenario for **Blinkit**, a leading instant delivery platform in India. The goal was to analyze historical sales data and identify trends across:
+This project simulates a real-world retail analytics scenario for **Blinkit**, a leading instant delivery platform in India.  
+The goal was to analyze historical sales data and identify trends across:
 
 - 📦 Product categories  
 - 🏬 Outlet performance (type, size, tier)  
@@ -21,16 +22,17 @@ This project simulates a real-world retail analytics scenario for **Blinkit**, a
 📁 **Deliverables:**  
 - 🔹 Dynamic **Power BI Dashboard**  
 - 🔹 Static **Excel Dashboard**  
+- 🔹 **SQL Queries** for data cleaning, KPI calculation, and segmentation  
 
 ---
 
 ## 🧠 Analytical Approach
 
 - 📚 **Data Understanding:** Reviewed column-level data and identified key variables (Sales, Ratings, Item Types, Tiers, etc.)  
-- 🧹 **Data Cleaning:** Removed nulls, handled data types, created categories, and unified naming conventions  
-- 🧮 **KPI Computation:** Used Excel formulas and DAX in Power BI to derive key metrics like average sales, ratings, and item count  
-- 📊 **Visualization Strategy:** Created clean, business-ready dashboards with filter panels, trend charts, and category comparisons  
-- 🎯 **Insight Extraction:** Identified patterns that impact revenue, category performance, and customer satisfaction  
+- 🧹 **Data Cleaning:** Standardized `Item_Fat_Content` categories to avoid inconsistencies (`LF` / `low fat` → `Low Fat`, `reg` → `Regular`)  
+- 🧮 **KPI Computation:** Used SQL aggregate functions, Excel formulas, and DAX in Power BI to derive insights  
+- 📊 **Visualization Strategy:** Built clean, business-ready dashboards with filters, trend charts, and category comparisons  
+- 🎯 **Insight Extraction:** Identified performance patterns impacting revenue and customer satisfaction  
 
 ---
 
@@ -40,13 +42,14 @@ This project simulates a real-world retail analytics scenario for **Blinkit**, a
 |---------------------|----------------------------------------------|
 | 📊 Power BI          | Interactive dashboarding and drilldown KPIs |
 | 📈 Microsoft Excel   | Static dashboards, pivot analysis            |
+| 🗄️ SQL (PostgreSQL)   | Data cleaning, KPI calculation, segmentation|
 
 ---
 
 ## 📌 Core Skills Demonstrated
 
 ✅ Business Intelligence  
-✅ Data Cleaning & Transformation  
+✅ Data Cleaning & Transformation (SQL)  
 ✅ Retail Analytics  
 ✅ Dashboard UI/UX Design  
 ✅ Storytelling with Data  
@@ -55,42 +58,57 @@ This project simulates a real-world retail analytics scenario for **Blinkit**, a
 
 ---
 
-## 📈 Key Performance Indicators (KPIs)
+## 📈 Key SQL Queries
 
-| KPI                         | Value        |
-|-----------------------------|--------------|
-| **Total Sales**             | $1.20M       |
-| **No. of Items Sold**       | 8,523        |
-| **Average Sales per Item**  | ~$141        |
-| **Average Rating**          | ~3.9         |
-| **Low Fat Item Sales**      | $776.3K      |
-| **Regular Fat Item Sales**  | $425.4K      |
+**Data Cleaning:**
+```sql
+UPDATE new_data
+SET item_fat_content =
+    CASE
+        WHEN item_fat_content IN ('LF', 'low fat') THEN 'Low Fat'
+        WHEN item_fat_content = 'reg' THEN 'Regular'
+        ELSE item_fat_content
+    END;
+```
+
+**KPI Calculations:**
+```sql
+-- Total Sales
+SELECT ROUND(SUM(sales)) AS Total_Sales FROM new_data;
+
+-- Average Sales
+SELECT ROUND(AVG(sales), 2) AS Avg_Sales FROM new_data;
+
+-- Number of Items
+SELECT COUNT(item_identifier) AS Count_Of_Items FROM new_data;
+
+-- Average Rating
+SELECT ROUND(AVG(rating), 2) AS Average_Rating FROM new_data;
+```
+
+**Segmentation Examples:**
+```sql
+-- Sales by Fat Content
+SELECT item_fat_content, ROUND(SUM(sales)) AS Total_Sales
+FROM new_data
+GROUP BY item_fat_content
+ORDER BY Total_Sales DESC;
+
+-- Sales by Outlet Type
+SELECT outlet_type, ROUND(SUM(sales)) AS Total_Sales
+FROM new_data
+GROUP BY outlet_type
+ORDER BY Total_Sales DESC;
+```
 
 ---
 
-## 🔍 Key Insights
-
-- 🏪 **Supermarket Type 1** drives the highest revenue (~$788K) — most impactful outlet type  
-- 🧈 **Low Fat items** outperform Regular by a large margin — signals a shift in consumer preferences  
-- 🏙️ **Tier 3 outlets** surprisingly outperform others — market potential in smaller cities  
-- 🏗️ **Medium-sized outlets** are the sweet spot in performance — optimized for sales and experience  
-- 🍏 **Top Item Types:** Fruits & Veggies, Snack Foods, Household, and Dairy account for most of the revenue  
-- ⭐ **Consistent Ratings (~3.9+)** across all outlet types — customer satisfaction is stable  
-
----
-
-## 📌 Dashboard Snapshots
+## 📊 Dashboard Snapshots
 
 ### 📊 Power BI Dashboard  
-Interactive filters, advanced segmentation, dynamic KPIs, and category breakdowns.
-
 ![Power BI Dashboard](./Blinkit_PowerBI.png)
 
----
-
 ### 📈 Excel Dashboard  
-Well-structured pivot visuals, summary KPIs, category slicers for business insights at a glance.
-
 ![Excel Dashboard](./Blinkit_excel.png)
 
 ---
@@ -107,7 +125,4 @@ Well-structured pivot visuals, summary KPIs, category slicers for business insig
 
 ## 💡 Why This Project Matters
 
-> This project demonstrates my ability to **extract insights**, **build intuitive dashboards**, and communicate trends in a way that helps **non-technical stakeholders make better business decisions**.  
-It combines the strengths of **BI tools**, **analytical thinking**, and **data storytelling** — all critical skills in today’s data-driven roles.
-
----
+> This project demonstrates my ability to **extract insights**, **write efficient SQL queries**, **build intuitive dashboards**, and communicate trends in a way that helps **non-technical stakeholders make better business decisions**.  
