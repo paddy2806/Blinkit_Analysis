@@ -42,16 +42,14 @@ The goal was to analyze historical sales data and identify trends across:
 |---------------------|----------------------------------------------|
 | 📊 Power BI          | Interactive dashboarding and drilldown KPIs |
 | 📈 Microsoft Excel   | Static dashboards, pivot analysis            |
-| 🗄️ SQL (PostgreSQL)   | Data cleaning, KPI calculation, segmentation|
+| 🗄️ SQL               | Data cleaning, KPI calculation, segmentation|
 
 ---
 
 ## 📌 Core Skills Demonstrated
 
-✅ Business Intelligence  
 ✅ Data Cleaning & Transformation (SQL)  
 ✅ Retail Analytics  
-✅ Dashboard UI/UX Design  
 ✅ Storytelling with Data  
 ✅ Functional KPI Development  
 ✅ Segmentation Analysis  
@@ -123,6 +121,3 @@ ORDER BY Total_Sales DESC;
 
 ---
 
-## 💡 Why This Project Matters
-
-> This project demonstrates my ability to **extract insights**, **write efficient SQL queries**, **build intuitive dashboards**, and communicate trends in a way that helps **non-technical stakeholders make better business decisions**.  
